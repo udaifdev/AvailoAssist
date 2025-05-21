@@ -1,0 +1,17 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "sourceMap": false,         // Disable source maps for production build
+      "declaration": true,        // Generate declaration files (.d.ts)
+      "outDir": "./dist",         // Ensure build output goes to the 'dist' folder
+      "removeComments": true,     // Remove comments from the final build
+      "noUnusedLocals": false,     // Fail on unused variables
+      "noUnusedParameters": false, // Fail on unused parameters
+      "strict": true              // Enable strict type-checking options
+    },
+    "exclude": [
+      "node_modules",             // Exclude node_modules from the build process
+      "src/test"                  // Optionally, exclude test files if you don't want to build them
+    ]
+  }
+  

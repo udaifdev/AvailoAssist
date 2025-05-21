@@ -1,0 +1,45 @@
+/* header.css */
+.mainHead .myHead {
+  color: rgb(12, 95, 87);
+}
+
+header {
+  font-family: 'Arial', sans-serif;
+}
+
+.providerbtn:hover{
+  background-color: rgb(38, 115, 103);
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: rgb(17, 120, 110);
+}
+
+/* Mobile Menu */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  nav ul {
+    padding-left: 0;
+  }
+
+  nav ul li {
+    padding: 0.5rem 0;
+  }
+
+  .myHead {
+    font-size: 1.5rem;  /* Smaller brand name for mobile */
+  }
+}

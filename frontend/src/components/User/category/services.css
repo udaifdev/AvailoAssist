@@ -1,0 +1,17 @@
+/* Add this to your global CSS file (e.g., App.css) */
+
+@keyframes textAnimation {
+    0% {
+      color: teal;
+      WebkitTextStroke: 1px white;
+    }
+    50% {
+      color: white;  /* Text color change */
+      WebkitTextStroke: 1px teal;  /* Stroke changes color */
+    }
+    100% {
+      color: teal;
+      WebkitTextStroke: 1px white;
+    }
+  }
+  

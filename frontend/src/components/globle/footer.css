@@ -1,0 +1,21 @@
+/* Footer Section */
+.footer {
+  background-color: rgba(5, 107, 95, 0.853); /* Gray background */
+  color: white;
+  padding: 40px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+}

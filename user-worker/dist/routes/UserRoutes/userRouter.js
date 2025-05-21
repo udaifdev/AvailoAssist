@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const authController_1 = require("../../controllers/UserController/authController");
+const homeController_1 = require("../../controllers/UserController/homeController");
+const profileController_1 = require("../../controllers/UserController/profileController");
+const userAuth_1 = require("../../middleware/userMiddleware/userAuth");
+const router = express_1.default.Router();
+router.post('/signup', authController_1.signupUser);
+router.post('/verify-otp', authController_1.verifyOtp);
+router.post('/resend-otp', authController_1.resendOtp);
+router.post('/login', authController_1.login);
+router.post('/logout', authController_1.logoutUser);
+router.get('/home', homeController_1.getUserHome);
+router.get('/profile/:userId', (0, userAuth_1.protect)('RoleUser'), profileController_1.user_Profile);
+router.put('/profileUpdate/:userId', (0, userAuth_1.protect)('RoleUser'), profileController_1.user_updateProfile);
+exports.default = router;

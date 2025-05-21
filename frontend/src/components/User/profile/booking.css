@@ -1,0 +1,76 @@
+/* Booking Card with Zoom-in Effect */
+.booking-card {
+  animation: fade-in 0.5s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Animation for the card fade-in */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effect to zoom and bring the card forward */
+.booking-card:hover {
+  transform: scale(1.05); /* Slight zoom-in */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow to highlight */
+}
+
+/* Booking Row Layout */
+.booking-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Consistent Labels */
+.booking-label {
+  font-weight: bold;
+  min-width: 140px;
+  text-align: left;
+}
+
+/* Values aligned to the right */
+.booking-value {
+  flex-grow: 1;
+  text-align: end;
+  /* color: white; */
+}
+
+/* Scrolling Text */
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-text 25s linear infinite;
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Smooth bounce animation for the service doll */
+.animate-smooth-bounce {
+  animation: smooth-bounce 2s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+
+/* Keyframes for smooth bounce animation */
+@keyframes smooth-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@nestjs/mapped-types": "*",
+    "axios": "^1.7.9",
+    "express": "^4.21.2"
+  }
+}

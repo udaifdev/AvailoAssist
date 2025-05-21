@@ -1,0 +1,35 @@
+    /* External CSS file */
+
+    /* Animation for stopping at halfway through the second task */
+    @keyframes stop-at {
+        0% {
+        width: 0%;
+        }
+        100% {
+        width: 92.5%; /* Stops at halfway through the second task */
+        }
+    }
+    
+    .animate-stop-at {
+        animation: stop-at  1.0s forwards ease-out;
+    }
+
+    .loader {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #4fd1c5; /* Match your theme's teal color */
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    

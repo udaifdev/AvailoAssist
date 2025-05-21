@@ -1,0 +1,23 @@
+.profile-container {
+    overflow-y: auto;
+    /* Add vertical scrolling */
+    max-height: 90vh;
+    /* Limit height to fit screen */
+    padding: 29px; /* Adjust padding for less irritation */
+    transition: padding 0.3s ease-in-out; /* Smooth transition for padding */
+    box-sizing: border-box; /* Ensure padding doesn't affect the container size */
+}
+
+.profilePart {
+    transition: transform 0.5s ease, box-shadow 0.5s ease, padding-left 0.3s ease, padding-right 0.3s, padding-top 0.4s;
+    /* Smooth transition for padding-left */
+}
+
+.profilePart:hover {
+    padding-left: 15px; /* Slightly increased padding for hover effect */
+    padding-right: 10px;
+    padding-top: 10px;
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(50, 50, 50, 0.2);
+    z-index: 1; /* Bring the section to the front */
+}
